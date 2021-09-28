@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            position: sticky;
+            padding: 1rem;
+            font-size: 2rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        a {
+            color: #15e293;
+            background-color: transparent;
+            text-decoration: none;
+            font-size: 2.5rem;
+        }
+        
+        a:hover {
+            color: rgb(230, 100, 41);
+            text-decoration: none;
+        }
+        
+        .navbar>a:hover {
+            background-color: rgb(180, 48, 70);
+        }
+        
+        .sort {
+            float: right;
+            padding: 0.5cm;
+        }
+        
+        #onebtn {
+            background-color: greenyellow;
+            border: 1px solid greenyellow;
+            border-radius: 25px;
+        }
+        
+        .sort>button {
+            border: 1px solid white;
+            border-radius: 25px;
+        }
+        
+        .panel-heading>img {
+            height: 6cm;
+            width: 6cm;
+            margin-left: 1cm;
+        }
+        
+        .panel-body {
+            padding: 0.2cm;
+            height: 6cm;
+            text-align: center;
+        }
+        
+        .panel {
+            background-color: #15e293;
+            height: 10.5cm;
+            width: 9cm;
+        }
+        
+        .panel:hover {
+            background-color: gold;
+        }
+        
+        a {
+            color: black
+        }
+        
+        .panel-body {
+            font-size: 2rem;
+        }
+        
+        .panel-body>h3 {
+            margin-top: 0.2cm;
+        }
+        
+        h3 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        footer>a {
+            color: crimson;
+        }
+        
+        .lastcontent {
+            margin-left: 15%;
+            padding: 3rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        
+        hr {
+            border: 2px solid rgb(237, 240, 237);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar   sticky-top  ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><span style="color: rgb(27, 230, 27);font-size:3rem">E-Food</span></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Steps</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">About Us</a></li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="glyphicon glyphicon-map-marker"></span> Choose Your Location
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+
+                        <li><a href="northindia.html">North India-others</a></li>
+                        <li><a href="southindia.html">South India-others</a></li>
+                    </ul>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="Banner">
+        <img src="images/FoodBanner.jpg" class="img-responsive" width="100%">
+    </div>
+    <div>
+        <div class="container-fluid">
+            <div>
+                <div class="sort"><span class="glyphicon glyphicon-sort">Sort: &nbsp;</span>
+                    <button id="onebtn">Popularity</button>
+                    <button>Low to High</button>
+                    <button>High to Low</button></div>
+                <h1 class="text-center" style="padding-top:3cm;font-size:5rem;color:black">The varities are on the way!!!</h1>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <a href="#">
+                            <div class="panel-heading"><img class="img-responsive" src="images/three4.jpg"></div>
+                            <div class="panel-body">
+                                <h3>Healthy Bowl</h3>
+                                Starts at Rs.100 &nbsp; <span class="glyphicon glyphicon-info-sign"></span> <br>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span><br> Home Delivery Available
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <a href="#">
+                            <div class="panel-heading"><img class="img-responsive" src="/images/one2.jpg"></div>
+                            <div class="panel-body">
+                                <h3>Spicy Snack</h3> Starts at Rs.100&nbsp; <span class="glyphicon glyphicon-info-sign"></span>
+                                <br><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span><br> Home Delivery Available
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <a href="#">
+                            <div class="panel-heading"><img class="img-responsive" src="/images/one3.jpg"> </div>
+                            <div class="panel-body">
+                                <h3>Icecream Bar</h3> Starts at Rs.60&nbsp; <span class="glyphicon glyphicon-info-sign"></span>
+                                <br><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span><br> Home Delivery Available
+
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <a href="#">
+                            <div class="panel-heading"><img class="img-responsive" src="/images/one4.jpg"></div>
+                            <div class="panel-body">
+                                <h3>Pizza</h3> Starts at Rs.120&nbsp; <span class="glyphicon glyphicon-info-sign"></span>
+                                <br><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span><br> Home Delivery Available
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <a href="#">
+                            <div class="panel-heading"><img class="img-responsive" src="/images/one5.jpg"></div>
+                            <div class="panel-body">
+                                <h3>Fruit Drinks</h3> Starts at Rs.30&nbsp; <span class="glyphicon glyphicon-info-sign"></span>
+                                <br><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span><br> Home Delivery Available
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <a href="#">
+                            <div class="panel-heading"><img class="img-responsive" src="/images/three5.jpg"></div>
+                            <div class="panel-body">
+                                <h3>Briyani</h3> Starts at Rs.100&nbsp; <span class="glyphicon glyphicon-info-sign"></span>
+                                <br><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span><br> Home Delivery Available
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <a href="#">
+                            <div class="panel-heading"><img class="img-responsive" src="/images/two2.jpg"></div>
+                            <div class="panel-body">
+                                <h3>chinese Bowl</h3> Starts at Rs.120&nbsp; <span class="glyphicon glyphicon-info-sign"></span>
+                                <br><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span><br> Home Delivery Available
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <a href="#">
+                            <div class="panel-heading"><img class="img-responsive" src="/images/two4.jpg"></div>
+                            <div class="panel-body">
+                                <h3>Non-veg Meal</h3>
+                                Starts at Rs.100&nbsp; <span class="glyphicon glyphicon-info-sign"></span>
+                                <br><span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span
+                                    ><span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span><br> Home Delivery Available
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid " style="background-color: rgb(111, 173, 240) ">
+            <div class="container lastcontent">
+                <div class="col-sm-6">
+                    <div class="container" style="margin-left: 50%;font-size:5rem;">
+                        <span class="text-center" style="color: white;">E- </span><span style="color: green;">Food</span>
+                    </div>
+                </div>
+                <hr width="80%" style="margin-left: 1cm;">
+
+                <div class="col-sm-5">
+                    <ul>
+                        <li><a href="">Any questions? Feel free to contact us!</a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-map-marker"></span>Mumbai,India</a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-phone"></span>Phone:+9900990090</a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-envelope"></span>E-mail:efood@gmail.com</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <ul>
+                        <li> <a href="">About E-Food</a></li>
+                        <li> <a href="">Became a Delivery Partner</a></li>
+                        <li> <a href="">Became a Restaurant Partner</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-sm-1">
+                    <ul>
+                        <li> <a href="">Help</a></li>
+                        <li> <a href=""> FAQs</a></li>
+                        <li> <a href="">Blog</a></li>
+
+                    </ul>
+                </div>
+
+                <hr width="80%" style="margin-left: 1cm;">
+
+                <div class="container" style="margin-left: 20%;">
+                    <div class="col-sm-3 "><img src=" /images/googleps.png " style='height: 1cm;width:4cm;' class="img-rounded" /></div>
+                    <div class="col-sm-8"><img src="/images/appstore.png" style='height: 1cm;width:4cm;' class="img-rounded" /></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div style="background-color:rgb(111, 173, 240) ;padding:20px;">
+        <a href="#" class="btn btn-sucess btn-lg" style="margin-left :45%;background-color: rgb(238, 226, 63) ;">
+            <span class="glyphicon glyphicon-circle-arrow-up"></span> Up
+        </a>
+
+    </div>
+</body>
+
+</html>
